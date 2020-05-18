@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Fitness Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve our fitness environment
+    </p>
+  </header>
+  <form id="survey-form">
+    
+      <legend>Your Details:</legend>
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Describe how a normal day is for you:</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Do not consider your workout routine</option>
+        <option value="sedentary">Sedentary</option>
+        <option value="lightly">Lightly Active</option>
+        <option value="moderately">Moderately Active</option>
+        <option value="vigorously">Vigorously Active</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+     
+    
+    <div class="form-group">
+      <p>What is your main fitness goal?</p>
+      <div class="goal">
+      <label>
+        <input
+          name="fitness-goal"
+          value="lose-body-fat"
+          type="radio"
+          class="input-radio"
+          checked
+        />Lose Body Fat</label
+      >
+      <label>
+        <input
+          name="fitness-goal"
+          value="muscle-strenght"
+          type="radio"
+          class="input-radio"
+        />Gain Muscle &amp; Strength</label
+      >
+
+      <label
+        ><input
+          name="fitness-goal"
+          value="body-recomposition"
+          type="radio"
+          class="input-radio"
+        />Body Recomposition - Maintenance</label
+      >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite fitness class?
+        <span class="clue">(Please tick all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Hip-Hop"
+          type="checkbox"
+          class="input-checkbox"
+        />Hip-Hop workout</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="zumba"
+          type="checkbox"
+          class="input-checkbox"
+        />Zumba</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="yoga"
+          type="checkbox"
+          class="input-checkbox"
+        />Yoga</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="pilates"
+          type="checkbox"
+          class="input-checkbox"
+        />Pilates</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="spinning"
+          type="checkbox"
+          class="input-checkbox"
+        />Spinning</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />Cardio kickboxing</label
+      >
+    </div>
+    <div id="review-form">
+  <h2>How would you rate your experience in which class?</h2>
+      
+<p>Classes</p>
+
+<ul style="list-style-type:none;">
+  <li>Hip-Hop workout</li>
+  <li>Zumba</li>
+  <li>Yoga</li>
+  <li>Pilates</li>
+  <li>Spinning</li>
+  <li>Cardio Kickboxing</li>
+</ul>  
+      
+  <div class="star-rating">
+    <div>
+    <p>Rating</p>
+<!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+    <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+    <label for="Overall_5">5</label>
+    <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+    <label for="Overall_4">4</label>
+    <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+    <label for="Overall_3">3</label>
+    <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+    <label for="Overall_2">2</label>
+    <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+    <label for="Overall_1">1</label>
+    </div>
+  
+  
+    <div>
+<!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+    <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+    <label for="Overall_5">5</label>
+    <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+    <label for="Overall_4">4</label>
+    <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+    <label for="Overall_3">3</label>
+    <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+    <label for="Overall_2">2</label>
+    <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+    <label for="Overall_1">1</label>
+  </div>
+  
+  <div>
+<!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+    <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+    <label for="Overall_5">5</label>
+    <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+    <label for="Overall_4">4</label>
+    <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+    <label for="Overall_3">3</label>
+    <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+    <label for="Overall_2">2</label>
+    <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+    <label for="Overall_1">1</label>
+  </div>
+  
+  <div>
+<!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+    <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+    <label for="Overall_5">5</label>
+    <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+    <label for="Overall_4">4</label>
+    <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+    <label for="Overall_3">3</label>
+    <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+    <label for="Overall_2">2</label>
+    <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+    <label for="Overall_1">1</label>
+  </div>
+  
+  <div>
+<!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+    <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+    <label for="Overall_5">5</label>
+    <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+    <label for="Overall_4">4</label>
+    <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+    <label for="Overall_3">3</label>
+    <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+    <label for="Overall_2">2</label>
+    <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+    <label for="Overall_1">1</label>
+    </div>
+    
+    <div>
+<!--     THESE HAVE TO BE IN REVERSE ORDER! -->
+    <input type="radio" name="ratings[1]" id="Overall_5" value="5" class="radio">
+    <label for="Overall_5">5</label>
+    <input type="radio" name="ratings[1]" id="Overall_4" value="4" class="radio">
+    <label for="Overall_4">4</label>
+    <input type="radio" name="ratings[1]" id="Overall_3" value="3" class="radio">
+    <label for="Overall_3">3</label>
+    <input type="radio" name="ratings[1]" id="Overall_2" value="2" class="radio">
+    <label for="Overall_2">2</label>
+    <input type="radio" name="ratings[1]" id="Overall_1" value="1" class="radio">
+    <label for="Overall_1">1</label>
+    </div>
+  </div>
+
+      
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="rating">
+      
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
